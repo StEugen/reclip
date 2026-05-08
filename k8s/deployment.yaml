@@ -14,7 +14,7 @@ spec:
         app: reclip
     spec:
       containers:
-          name: reclip
+        - name: reclip
           image: your-reclip-image-here
           ports:
             - containerPort: 8889
