@@ -7,8 +7,8 @@ spec:
   type: NodePort
   ports:
     - protocol: TCP
-      port: 8890
-      targetPort: 8889
+      port: 8899
+      targetPort: 8899
       nodePort: 31300
   selector:
     app: reclip
