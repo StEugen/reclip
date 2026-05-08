@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reclip
+  namespace: reclip
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: reclip
+  template:
+    metadata:
+      labels:
+        app: reclip
+    spec:
+      containers:
+          name: reclip
+          image: your-reclip-image-here
+          ports:
+            - containerPort: 8889
